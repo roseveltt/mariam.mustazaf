@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam Mustazaf | Comments & Questions</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF8F0;
+    color: #2C3E50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 15px;
+}
+
+/* Site Title / Hero Section */
+.site-title {
+    background-image: url('questions-bg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 90px 30px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #1E3A5F;
+    padding: 12px 0;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #F4A261;
+    color: #1E3A5F;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 1px solid #F4A261;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 32px;
+    color: #1E3A5F;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #2C3E50;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E3A5F;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 16px;
+    border: 2px solid #E0D6C5;
+    border-radius: 15px;
+    background-color: #FFF8F0;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #F4A261;
+    box-shadow: 0 0 0 3px rgba(244, 162, 97, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #1E3A5F;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: block;
+}
+
+.submit-btn:hover {
+    background-color: #F4A261;
+    color: #1E3A5F;
+    transform: translateY(-2px);
+}
+
+/* Go Back Button */
+.back-button-container {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1E3A5F;
+    color: white;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #F4A261;
+    color: #1E3A5F;
+    transform: translateX(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #1E3A5F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* ======================================== */
+/* 📱 RESPONSIVE DESIGN */
+/* ======================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .site-title {
+        padding: 50px 20px;
+        font-size: 28px;
+    }
+
+    .form-container {
+        padding: 25px;
+        margin: 0 10px;
+    }
+
+    .form-title {
+        font-size: 26px;
+    }
+
+    .form-subtitle {
+        font-size: 14px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-title {
+        padding: 35px 15px;
+        font-size: 22px;
+        border-radius: 15px;
+    }
+
+    .form-container {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .form-title {
+        font-size: 22px;
+    }
+
+    .form-subtitle {
+        font-size: 13px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 13px;
+        border-radius: 12px;
+    }
+
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .back-btn {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+</style>
+<body>
+
+<div class="site-title">
+    Mariam Mustazaf | Comments & Questions
+</div>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Biography</a></li>
+        <li><a href="activity.html">Extracurricular Activities</a></li>
+        <li><a href="awards.html">Awards & Achievements</a></li>
+        <li><a href="hobbies.html">Hobbies & Engagements</a></li>
+        <li><a href="contact.html">Contact Info</a></li>
+    </ul>
+</nav>
+
+<div class="form-container">
+    <h2 class="form-title">💬 Drop Your Comments & Questions!</h2>
+    <p class="form-subtitle">I'd love to hear from you — ask me anything about English, Computer, or my journey!</p>
+
+    <form action="https://formspree.io/f/mdalnqqg" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="name">📝 Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">✉️ Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">💭 Message / Question:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Type your message or question here..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">📨 Send Message</button>
+    </form>
+</div>
+
+<!-- Go Back Button at the End -->
+<div class="back-button-container">
+    <a href="contact.html" class="back-btn">← Go Back to Contact</a>
+</div>
+
+<footer>
+    <p>© 2026 Mariam Mustazaf. All rights reserved.</p>
+    <p>📧 English & Computer Instructor | Empowering Minds, Building Futures</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF8F0;
+    color: #2C3E50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 15px;
+}
+/* Site Title / Hero Section - Responsive Full Image */
+.site-title {
+    background-image: url('afgbeauty.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1E3A5F;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    
+    /* Responsive height */
+    width: 100%;
+    min-height: 250px;
+    
+    /* On larger screens, use 16:9 ratio */
+    aspect-ratio: 16 / 9;
+    
+    /* Center text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text shadow for readability */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    padding: 0 20px;
+}
+
+.site-title h1 {
+    font-size: clamp(24px, 5vw, 48px);  /* Responsive font */
+    margin-bottom: 10px;
+}
+
+.site-title p {
+    font-size: clamp(14px, 3vw, 24px);  /* Responsive font */
+}
+
+/* On very small phones, allow more height */
+@media (max-width: 768px) {
+    .site-title {
+        aspect-ratio: auto;  /* Remove fixed ratio on phones */
+        min-height: 200px;
+        padding: 40px 15px;
+    }
+}
+/* Navigation */
+nav {
+    background-color: #1E3A5F;
+    padding: 12px 0;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #F4A261;
+    color: #1E3A5F;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 32px;
+    color: #1E3A5F;
+    margin-bottom: 20px;
+    border-left: 6px solid #F4A261;
+    padding-left: 20px;
+}
+
+.head2 {
+    text-align: right;
+    font-size: 32px;
+    color: #1E3A5F;
+    margin: 40px 0 20px 0;
+    border-right: 6px solid #F4A261;
+    padding-right: 20px;
+}
+
+/* Containers - Responsive */
+.container1, .container2 {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+/* Images - Responsive */
+.profile-img, .school-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid #F4A261;
+    flex-shrink: 0;
+}
+
+/* Text */
+.about-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2C3E50;
+    text-align: justify;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Footer */
+footer {
+    background-color: #1E3A5F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* ======================================== */
+/* 📱 RESPONSIVE DESIGN FOR PHONES & TABLETS */
+/* ======================================== */
+
+/* Tablet Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .site-title {
+        padding: 50px 15px;
+    }
+
+    .site-title h1 {
+        font-size: 32px;
+    }
+
+    .site-title p {
+        font-size: 16px;
+    }
+
+    nav {
+        border-radius: 20px;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .section-title {
+        font-size: 26px;
+        padding-left: 15px;
+    }
+
+    .head2 {
+        font-size: 26px;
+        padding-right: 15px;
+    }
+
+    .container1, .container2 {
+        padding: 20px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img, .school-img {
+        max-width: 280px;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+}
+
+/* Phone Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .site-title {
+        padding: 35px 12px;
+        border-radius: 15px;
+    }
+
+    .site-title h1 {
+        font-size: 24px;
+    }
+
+    .site-title p {
+        font-size: 14px;
+    }
+
+    nav {
+        border-radius: 15px;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        gap: 6px;
+    }
+
+    nav a {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .section-title {
+        font-size: 22px;
+        border-left-width: 4px;
+        padding-left: 12px;
+    }
+
+    .head2 {
+        font-size: 22px;
+        border-right-width: 4px;
+        padding-right: 12px;
+    }
+
+    .container1, .container2 {
+        padding: 15px;
+        border-radius: 15px;
+        gap: 15px;
+    }
+
+    .profile-img, .school-img {
+        max-width: 220px;
+        border-width: 3px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    footer {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* Very Small Phones (max-width: 360px) */
+@media (max-width: 360px) {
+    .site-title h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .profile-img, .school-img {
+        max-width: 180px;
+    }
+
+    .about-text {
+        font-size: 13px;
+    }
+}

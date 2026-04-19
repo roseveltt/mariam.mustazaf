@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF8F0;
+    color: #2C3E50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 15px;
+}
+
+/* Site Title / Hero Section - KEEPING YOUR ORIGINAL BACKGROUND */
+.site-title {
+    background-image: url('contact.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 90px 30px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #1E3A5F;
+    padding: 12px 0;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #F4A261;
+    color: #1E3A5F;
+}
+
+/* Social Media Title */
+.socialmedia-title {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    font-size: 36px;
+    color: #1E3A5F;
+    font-weight: bold;
+}
+
+/* Social Box Grid */
+.social-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Social Cards */
+.social-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #F4A261;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: #1E3A5F;
+}
+
+.social-card h3 {
+    color: #1E3A5F;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Logo Images */
+.logo-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    border: 3px solid #F4A261;
+    padding: 5px;
+    background: white;
+}
+
+.social-card:hover .logo-img {
+    transform: scale(1.1);
+    border-color: #1E3A5F;
+}
+
+/* Social Links */
+.social-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1E3A5F;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.social-link:hover {
+    background-color: #F4A261;
+    color: #1E3A5F;
+    transform: translateX(3px);
+}
+
+/* Go Back Button */
+.back-button-container {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1E3A5F;
+    color: white;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #F4A261;
+    color: #1E3A5F;
+    transform: translateX(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #1E3A5F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* ======================================== */
+/* 📱 RESPONSIVE DESIGN */
+/* ======================================== */
+
+/* Tablet Screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .site-title {
+        padding: 50px 20px;
+        font-size: 28px;
+    }
+
+    .socialmedia-title {
+        font-size: 28px;
+    }
+
+    .social-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .social-card {
+        padding: 20px 15px;
+    }
+
+    .social-card h3 {
+        font-size: 18px;
+    }
+
+    .logo-img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .social-link {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/* Phone Screens */
+@media (max-width: 480px) {
+    .site-title {
+        padding: 35px 15px;
+        font-size: 22px;
+        border-radius: 15px;
+    }
+
+    .socialmedia-title {
+        font-size: 24px;
+        margin: 15px 0 20px 0;
+    }
+
+    .social-box {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .social-card {
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+
+    .social-card h3 {
+        font-size: 18px;
+    }
+
+    .logo-img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .social-link {
+        font-size: 13px;
+        padding: 8px 18px;
+    }
+
+    footer {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .back-btn {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+/* Very Small Phones */
+@media (max-width: 360px) {
+    .site-title {
+        font-size: 18px;
+        padding: 25px 12px;
+    }
+
+    .socialmedia-title {
+        font-size: 20px;
+    }
+
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+}
